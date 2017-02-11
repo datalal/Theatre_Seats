@@ -3,6 +3,7 @@
     width: 500px;
     height: 100%;
     text-align: center;
+    border: 3px solid black;
 }
 
 .seatBox {
@@ -16,7 +17,7 @@
 
 
 
-.seatBox:nth-child(3n) {
+.seatBox:nth-child(n+6):nth-child(-n+10) {
     background-color: red;
     padding: 5px;
     margin: 5px;
@@ -25,6 +26,14 @@
     display: inline-block;
 }
 
+.seatBox:nth-child(n+16):nth-child(-n+20) {
+    background-color: red;
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+}
 
 .stage {
     background-color: black;
